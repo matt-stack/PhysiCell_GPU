@@ -38,8 +38,8 @@ CFLAGS := -march=$(ARCH) -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -s
 ACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -ta=tesla:managed
 #ACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -ta=host
 #ACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -ta=multicore
-#NVACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -gpu=managed
-NVACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -gpu=cc70
+NVACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -gpu=managed
+#NVACCFLAGS := -std=c++11 -Minline -Minfo=accel -acc -gpu=cc70
 
 COMPILE_COMMAND := $(CC) $(CFLAGS) 
 
